@@ -1,0 +1,134 @@
+/* ====== VARIÁVEIS & RESET ====== */
+:root {
+  /* Cores */
+  --primary-color: #3498db;
+  --primary-dark: #2980b9;
+  --primary-green: #00695c;
+  --primary-green-dark: #004d40;
+  --accent-yellow: #ffeb3b;
+  --text-dark: #2c3e50;
+  --text-light: #333;
+  --bg-light: #f5f5f5;
+  --bg-page: #f0f4f8;
+  --white: #ffffff;
+  --border-light: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== BASE ====== */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://thumbs.dreamstime.com/b/floresta-tropical-tropical-densa-19935125.jpg);
+  background-size: cover;       /* Faz a imagem cobrir toda a área */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center;  /* Centraliza a imagem */
+  background-attachment: fixed; /* Opcional: fixa a imagem ao rolar */
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+  margin: 0;                   /* Remove margens padrão do body */
+  min-height: 100vh;           /* Garante que o body ocupe toda a altura da tela */
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* ====== NAVEGAÇÃO ====== */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-yellow);
+}
+
+/* ====== CONTEÚDO PRINCIPAL ====== */
+main, .quiz-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Adicionado transparência para melhor legibilidade */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--text-white);
+}
+
+main h2 {
+  color: var(--primary-green);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* ====== COMPONENTES DO QUIZ ====== */
+.question {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7); /* Fundo levemente transparente */
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(245, 245, 245, 0.9); /* Fundo com transparência */
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-green-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+}

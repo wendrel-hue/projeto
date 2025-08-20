@@ -1,0 +1,130 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://tse3.mm.bing.net/th/id/OIP.wuJ846Kpv9FvmDiAjDbD4gHaE8?pid=Api&P=0&h=180');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  background-color: rgba(0, 105, 92, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Menu de navegação */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+  margin-bottom: 20px;
+  color: #00695c;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Estilo para a lista de curiosidades */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f8f9fa;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #00695c;
+  font-size: 1.1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  header h2 {
+    font-size: 1.2rem;
+  }
+  
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  main {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+}

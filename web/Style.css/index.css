@@ -1,0 +1,87 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://thumbs.dreamstime.com/b/floresta-tropical-tropical-densa-19935125.jpg);
+  background-size: cover;       /* Faz a imagem cobrir toda a área */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center;  /* Centraliza a imagem */
+  background-attachment: fixed; /* Opcional: fixa a imagem ao rolar */
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+  margin: 0;                   /* Remove margens padrão do body */
+  min-height: 100vh;           /* Garante que o body ocupe toda a altura da tela */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #00695c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Menu de navegação */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+main h2 {
+  margin-bottom: 20px;
+  color: #00695c;
+  font-size: 1.8rem;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+}
